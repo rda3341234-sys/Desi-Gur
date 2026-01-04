@@ -11,7 +11,7 @@ const PRODUCTS = {
         id: "500gm",
         name: "Desi Mithas Gur - 500gm Pack",
         price: 349,
-        image: "https://raw.githubusercontent.com/rda3341234-sys/Desi-Gur/blob/main/image/gur2.jpg",
+        image: "https://github.com/rda3341234-sys/Desi-Gur/blob/main/image/gur2.jpg",
         description: "Perfect for testing quality or small families. Stay fresh for 6 months.",
         weight: "500 grams",
         shelfLife: "6 Months"
@@ -20,7 +20,7 @@ const PRODUCTS = {
         id: "1kg",
         name: "Desi Mithas Gur - 1kg Pack",
         price: 699,
-        image: "https://raw.githubusercontent.com/rda3341234-sys/Desi-Gur/blob/main/image/gur3.jpg",
+        image: "https://github.com/rda3341234-sys/Desi-Gur/blob/main/image/gur3.jpg",
         description: "Ideal for small families. Best value for money with premium quality.",
         weight: "1 kilogram",
         shelfLife: "6 Months"
@@ -29,7 +29,7 @@ const PRODUCTS = {
         id: "5kg",
         name: "Desi Mithas Gur - 5kg Pack",
         price: 3199,
-        image: "https://raw.githubusercontent.com/rda3341234-sys/Desi-Gur/blob/main/image/gur4.jpg",
+        image: "https://github.com/rda3341234-sys/Desi-Gur/blob/main/image/gur4.jpg",
         description: "Best for large families or regular users. Economical price with premium quality.",
         weight: "5 kilograms",
         shelfLife: "6 Months"
@@ -38,7 +38,7 @@ const PRODUCTS = {
         id: "custom",
         name: "Custom Quantity Desi Mithas Gur",
         price: 0,
-        image: "https://raw.githubusercontent.com/rda3341234-sys/Desi-Gur/blob/main/image/Gur1.jpeg",
+        image: "https://github.com/rda3341234-sys/Desi-Gur/blob/main/image/Gur1.jpeg",
         description: "We provide gur in any quantity - from 250gm to bulk wholesale orders.",
         weight: "Flexible",
         shelfLife: "6 Months"
@@ -441,5 +441,6 @@ window.addToCart = addToCart;
 window.sendDirectWhatsApp = sendDirectWhatsApp;
 
 window.changeQuantity = changeQuantity;
+
 
 
