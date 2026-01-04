@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Desi Mithas Gur | Complete Your Order</title>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="index.html" class="logo-text">
+                    <i class="fas fa-candy-cane"></i>
+                    Desi<span>Mithas</span>
+                </a>
+            </div>
+            
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="index.html#products" class="nav-link">Products</a>
+                <a href="#order-form" class="nav-link active">Order Now</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Order Header -->
+    <section class="order-header">
+        <div class="container">
+            <div class="order-header-content">
+                <a href="index.html" class="back-link">
+                    <i class="fas fa-arrow-left"></i> Back to Products
+                </a>
+                <h1><i class="fas fa-shopping-cart"></i> Complete Your Order</h1>
+                <p>Fill the form below with your details. We'll contact you immediately for confirmation and delivery.</p>
+                <div class="order-steps">
+                    <div class="step active">
+                        <div class="step-number">1</div>
+                        <div class="step-text">Select Product</div>
+                    </div>
+                    <div class="step active">
+                        <div class="step-number">2</div>
+                        <div class="step-text">Fill Details</div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-text">Get Delivery</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="order-page-main">
+            <!-- Left Column: Order Form -->
+            <div class="order-form-column">
+                <!-- Selected Product Display -->
+                <div class="selected-product-card">
+                    <h3><i class="fas fa-cube"></i> Selected Product</h3>
+                    <div class="product-display-card">
+                        <img id="orderProductImage" src="/Asset/images/gur-500gm.jpg.jpg" alt="Desi Mithas Gur">
+                        <div class="product-info">
+                            <h4 id="orderProductName">Desi Mithas Gur - 500gm Pack</h4>
+                            <p id="orderProductDesc">Perfect for small families. Fresh for 6 months.</p>
+                            <div class="price-tag">
+                                <span class="price-label">Price:</span>
+                                <span class="price-value" id="orderProductPrice">Rs. 349</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Customer Information Form -->
+                <div class="customer-form-card">
+                    <h3><i class="fas fa-user"></i> Your Information</h3>
+                    
+                    <form id="orderForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="customerName"><i class="fas fa-user-circle"></i> Full Name *</label>
+                                <input type="text" id="customerName" placeholder="Enter your full name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="customerPhone"><i class="fab fa-whatsapp"></i> WhatsApp Number *</label>
+                                <input type="tel" id="customerPhone" placeholder="03XX-XXXXXXX" value="03" required>
+                                <small>We'll contact you on this number</small>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="customerEmail"><i class="fas fa-envelope"></i> Email Address (Optional)</label>
+                            <input type="email" id="customerEmail" placeholder="your.email@example.com">
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="customerCity"><i class="fas fa-city"></i> City *</label>
+                                <select id="customerCity" required>
+                                    <option value="">Select your city</option>
+                                    <option value="karachi">Karachi</option>
+                                    <option value="lahore">Lahore</option>
+                                    <option value="islamabad">Islamabad</option>
+                                    <option value="rawalpindi">Rawalpindi</option>
+                                    <option value="faisalabad">Faisalabad</option>
+                                    <option value="multan">Multan</option>
+                                    <option value="peshawar">Peshawar</option>
+                                    <option value="quetta">Quetta</option>
+                                    <option value="hyderabad">Hyderabad</option>
+                                    <option value="gujranwala">Gujranwala</option>
+                                    <option value="sialkot">Sialkot</option>
+                                    <option value="bahawalpur">Bahawalpur</option>
+                                    <option value="sargodha">Sargodha</option>
+                                    <option value="other">Other City</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="deliveryArea"><i class="fas fa-map-marker-alt"></i> Area/Sector *</label>
+                                <input type="text" id="deliveryArea" placeholder="Your area or sector" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="fullAddress"><i class="fas fa-home"></i> Complete Address *</label>
+                            <textarea id="fullAddress" rows="3" placeholder="House# Street# Landmark (e.g., near mosque/school)" required></textarea>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="orderQuantity"><i class="fas fa-sort-amount-up"></i> Quantity *</label>
+                                <div class="quantity-control">
+                                    <button type="button" class="qty-btn" onclick="changeQuantity(-1)">-</button>
+                                    <input type="number" id="orderQuantity" value="1" min="1" max="10">
+                                    <button type="button" class="qty-btn" onclick="changeQuantity(1)">+</button>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="deliveryTime"><i class="fas fa-clock"></i> Preferred Time</label>
+                                <select id="deliveryTime">
+                                    <option value="any">Any Time</option>
+                                    <option value="morning">Morning (9 AM - 12 PM)</option>
+                                    <option value="afternoon">Afternoon (12 PM - 4 PM)</option>
+                                    <option value="evening">Evening (4 PM - 8 PM)</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="specialInstructions"><i class="fas fa-sticky-note"></i> Special Instructions (Optional)</label>
+                            <textarea id="specialInstructions" rows="2" placeholder="Any special delivery instructions or timing preferences"></textarea>
+                        </div>
+                        
+                        <!-- Payment Method -->
+                        <div class="payment-method-card">
+                            <h4><i class="fas fa-credit-card"></i> Payment Method</h4>
+                            <div class="payment-options-grid">
+                                <label class="payment-option">
+                                    <input type="radio" name="payment" value="cod" checked>
+                                    <div class="payment-content">
+                                        <i class="fas fa-money-bill-wave"></i>
+                                        <div>
+                                            <h5>Cash on Delivery</h5>
+                                            <p>Pay when you receive your order</p>
+                                        </div>
+                                    </div>
+                                </label>
+                                
+                                <label class="payment-option">
+                                    <input type="radio" name="payment" value="bank">
+                                    <div class="payment-content">
+                                        <i class="fas fa-university"></i>
+                                        <div>
+                                            <h5>Bank Transfer</h5>
+                                            <p>We'll share bank details via WhatsApp</p>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <!-- Order Summary -->
+                        <div class="order-summary-card">
+                            <h4><i class="fas fa-receipt"></i> Order Summary</h4>
+                            <div class="summary-details">
+                                <div class="summary-row">
+                                    <span>Product:</span>
+                                    <span id="summaryProduct">Desi Mithas Gur - 500gm Pack</span>
+                                </div>
+                                <div class="summary-row">
+                                    <span>Quantity:</span>
+                                    <span id="summaryQuantity">1</span>
+                                </div>
+                                <div class="summary-row">
+                                    <span>Unit Price:</span>
+                                    <span id="summaryUnitPrice">Rs. 349</span>
+                                </div>
+                                <div class="summary-row">
+                                    <span>Subtotal:</span>
+                                    <span id="summarySubtotal">Rs. 349</span>
+                                </div>
+                                <div class="summary-row">
+                                    <span>Delivery:</span>
+                                    <span id="summaryDelivery">Rs. 100</span>
+                                </div>
+                                <div class="summary-row total">
+                                    <span>Total Amount:</span>
+                                    <span id="summaryTotal">Rs. 449</span>
+                                </div>
+                            </div>
+                            <div class="summary-note">
+                                <i class="fas fa-info-circle"></i>
+                                Free delivery on orders above Rs. 2,000
+                            </div>
+                        </div>
+                        
+                        <!-- Submit Button -->
+                        <button type="submit" class="submit-order-btn">
+                            <i class="fab fa-whatsapp"></i> Confirm Order via WhatsApp
+                        </button>
+                        
+                        <div class="privacy-note">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Your information is secure. We don't share your details with anyone.</span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+            <!-- Right Column: Contact Information -->
+            <div class="contact-column">
+                <!-- Contact Information -->
+                <div class="contact-info-card" id="contact">
+                    <h3><i class="fas fa-phone"></i> Contact Information</h3>
+                    
+                    <div class="contact-details-grid">
+                        <div class="contact-detail">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-content">
+                                <h4>Call Us Directly</h4>
+                                <a href="tel:+923494765335" class="contact-link">
+                                    <i class="fas fa-phone-alt"></i> +92 349 4765335
+                                </a>
+                                <p>Available 24/7 for orders and inquiries</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-detail whatsapp-contact">
+                            <div class="contact-icon">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div class="contact-content">
+                                <h4>WhatsApp Orders</h4>
+                                <a href="https://wa.me/923494765335" class="contact-link">
+                                    <i class="fab fa-whatsapp"></i> +92 349 4765335
+                                </a>
+                                <p>Fastest way to place your order</p>
+                                <button class="whatsapp-direct-btn" onclick="window.open('https://wa.me/923494765335')">
+                                    <i class="fab fa-whatsapp"></i> Message on WhatsApp
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-detail">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-content">
+                                <h4>Email Us</h4>
+                                <a href="mailto:Hassamrana3566@gmail.com" class="contact-link">
+                                    <i class="fas fa-envelope"></i> Hassamrana3566@gmail.com
+                                </a>
+                                <p>For business inquiries and feedback</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-detail">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-content">
+                                <h4>Business Hours</h4>
+                                <p><strong>Orders:</strong> 24/7 via WhatsApp</p>
+                                <p><strong>Delivery:</strong> 9:00 AM - 10:00 PM</p>
+                                <p><strong>Support:</strong> Monday - Sunday</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Delivery Information -->
+                <div class="delivery-info-card">
+                    <h3><i class="fas fa-truck"></i> Delivery Information</h3>
+                    
+                    <div class="delivery-points">
+                        <div class="delivery-point">
+                            <i class="fas fa-shipping-fast"></i>
+                            <div>
+                                <h4>Free Delivery</h4>
+                                <p>On orders above Rs. 2,000 in major cities</p>
+                            </div>
+                        </div>
+                        
+                        <div class="delivery-point">
+                            <i class="fas fa-bolt"></i>
+                            <div>
+                                <h4>Fast Delivery</h4>
+                                <p>Same day delivery for orders before 3 PM</p>
+                            </div>
+                        </div>
+                        
+                        <div class="delivery-point">
+                            <i class="fas fa-map-marked-alt"></i>
+                            <div>
+                                <h4>All Pakistan Delivery</h4>
+                                <p>We deliver to every city across Pakistan</p>
+                            </div>
+                        </div>
+                        
+                        <div class="delivery-point">
+                            <i class="fas fa-box"></i>
+                            <div>
+                                <h4>Hygienic Packaging</h4>
+                                <p>Food-grade packaging to ensure freshness</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="delivery-cities">
+                        <h4><i class="fas fa-globe"></i> Major Cities We Serve</h4>
+                        <div class="cities-tags">
+                            <span class="city-tag">Karachi</span>
+                            <span class="city-tag">Lahore</span>
+                            <span class="city-tag">Islamabad</span>
+                            <span class="city-tag">Rawalpindi</span>
+                            <span class="city-tag">Faisalabad</span>
+                            <span class="city-tag">Multan</span>
+                            <span class="city-tag">Peshawar</span>
+                            <span class="city-tag">Quetta</span>
+                            <span class="city-tag">Hyderabad</span>
+                            <span class="city-tag">Gujranwala</span>
+                            <span class="city-tag">Sialkot</span>
+                            <span class="city-tag">Bahawalpur</span>
+                            <span class="city-tag">Sargodha</span>
+                            <span class="city-tag">Sukkur</span>
+                            <span class="city-tag">Larkana</span>
+                            <span class="city-tag">Sheikhupura</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Quality Assurance -->
+                <div class="quality-assurance-card">
+                    <h3><i class="fas fa-certificate"></i> Quality Assurance</h3>
+                    <div class="quality-points">
+                        <div class="quality-point">
+                            <i class="fas fa-check-circle"></i>
+                            <span>100% Pure Sugarcane Gur</span>
+                        </div>
+                        <div class="quality-point">
+                            <i class="fas fa-check-circle"></i>
+                            <span>No Chemicals or Additives</span>
+                        </div>
+                        <div class="quality-point">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Traditional Preparation Method</span>
+                        </div>
+                        <div class="quality-point">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Hygienic Processing & Packaging</span>
+                        </div>
+                        <div class="quality-point">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Fresh Batch Every Week</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- FAQ -->
+                <div class="faq-card">
+                    <h3><i class="fas fa-question-circle"></i> Frequently Asked Questions</h3>
+                    <div class="faq-list">
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                <span>How do I place an order?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Fill the order form on this page or WhatsApp us at +92 349 4765335. We'll confirm your order within minutes.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                <span>Is the gur 100% pure?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Yes! Our gur is 100% pure sugarcane with no additives, chemicals, or artificial sweeteners.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                <span>What payment methods do you accept?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Cash on Delivery and Bank Transfer. For bank transfer, we share account details after order confirmation.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer with Contact Info -->
+    <footer class="order-page-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-candy-cane"></i>
+                        <span>Desi<span>Mithas</span></span>
+                    </div>
+                    <p class="footer-desc">Bringing the authentic taste of pure desi gur to your home. Freshly prepared, hygienically packed, and delivered with care.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <a href="index.html"><i class="fas fa-home"></i> Home</a>
+                    <a href="index.html#products"><i class="fas fa-shopping-bag"></i> Our Gur</a>
+                    <a href="#order-form"><i class="fas fa-shopping-cart"></i> Order Now</a>
+                    <a href="#contact"><i class="fas fa-phone"></i> Contact</a>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Our Products</h4>
+                    <a href="order.html?product=500gm"><i class="fas fa-cube"></i> 500gm Gur Pack</a>
+                    <a href="order.html?product=1kg"><i class="fas fa-cube"></i> 1kg Gur Pack</a>
+                    <a href="order.html?product=5kg"><i class="fas fa-cube"></i> 5kg Gur Pack</a>
+                    <a href="order.html?product=custom"><i class="fas fa-balance-scale"></i> Custom Orders</a>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact Details</h4>
+                    <p><i class="fas fa-phone"></i> +92 349 4765335</p>
+                    <p><i class="fab fa-whatsapp"></i> +92 349 4765335</p>
+                    <p><i class="fas fa-envelope"></i> Hassamrana3566@gmail.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Serving All Pakistan</p>
+                    <div class="footer-badge">
+                        <i class="fas fa-award"></i>
+                        <span>100% Pure Gur Guarantee</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> Desi Mithas Premium Gur. All rights reserved.</p>
+                <p class="footer-tagline">Pure Sugarcane • Traditional Taste • Home Delivered • Nationwide Service</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/923494765335" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+        <span>Message on WhatsApp</span>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
