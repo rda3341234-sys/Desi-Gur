@@ -1310,19 +1310,7 @@ body {
     background: linear-gradient(135deg, #25D366, #128C7E);
     color: white;
 }
-/* Images ko responsive banaye */
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
 
-/* Background images ke liye */
-.banner {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
 
 
 
@@ -1771,6 +1759,7 @@ img {
         text-align: center;
     }
 }
+
 
 
 
