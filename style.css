@@ -1310,7 +1310,56 @@ body {
     background: linear-gradient(135deg, #25D366, #128C7E);
     color: white;
 }
+/* Images ko responsive banaye */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
 
+/* Background images ke liye */
+.banner {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/* Simple Grid */
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+}
+
+.col {
+    flex: 1 0 100%;
+    padding: 15px;
+}
+
+/* Mobile mein 1 column, Tablet 2, Desktop 4 */
+@media (min-width: 576px) { .col { flex: 0 0 50%; } }
+@media (min-width: 768px) { .col { flex: 0 0 33.333%; } }
+@media (min-width: 992px) { .col { flex: 0 0 25%; } }
+/* Mobile ke liye buttons bada karo */
+button, .order-btn, .nav-links a {
+    min-height: 44px;
+    min-width: 44px;
+    padding: 12px 24px;
+    font-size: 16px;
+}
+
+/* Touch spacing */
+a, button {
+    margin: 5px;
+    display: inline-block;
+}
 .contact-content h4 {
     font-size: 1.1rem;
     margin-bottom: 0.5rem;
@@ -1729,6 +1778,60 @@ body {
         border-radius: 50%;
         justify-content: center;
     }
+     body {
+        font-size: 14px;
+        overflow-x: hidden;
+    }
+    
+    .navbar, .nav-links {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+    
+    .nav-links {
+        gap: 10px;
+    }
+    
+    .hero h1 {
+        font-size: 1.8rem;
+        padding: 0 15px;
+    }
+    
+    .features, .benefits {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .feature-item, .benefit {
+        width: 90%;
+        margin: 10px auto;
+    }
+    
+    .order-btn {
+        width: 90%;
+        padding: 15px;
+        font-size: 1.1rem;
+    }
+    
+    .pure-section {
+        margin: 10px;
+        padding: 20px;
+    }
+}
+
+/* TABLET STYLES */
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+    .container {
+        padding: 0 20px;
+    }
+    
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+}
+
 }
 
 @media (max-width: 480px) {
@@ -1753,5 +1856,6 @@ body {
         text-align: center;
     }
 }
+
 
 
