@@ -1778,58 +1778,7 @@ a, button {
         border-radius: 50%;
         justify-content: center;
     }
-     body {
-        font-size: 14px;
-        overflow-x: hidden;
-    }
     
-    .navbar, .nav-links {
-        flex-direction: column;
-        text-align: center;
-        padding: 10px;
-    }
-    
-    .nav-links {
-        gap: 10px;
-    }
-    
-    .hero h1 {
-        font-size: 1.8rem;
-        padding: 0 15px;
-    }
-    
-    .features, .benefits {
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-    }
-    
-    .feature-item, .benefit {
-        width: 90%;
-        margin: 10px auto;
-    }
-    
-    .order-btn {
-        width: 90%;
-        padding: 15px;
-        font-size: 1.1rem;
-    }
-    
-    .pure-section {
-        margin: 10px;
-        padding: 20px;
-    }
-}
-
-/* TABLET STYLES */
-@media screen and (max-width: 1024px) and (min-width: 769px) {
-    .container {
-        padding: 0 20px;
-    }
-    
-    .hero h1 {
-        font-size: 2.2rem;
-    }
 }
 
 }
@@ -1856,6 +1805,7 @@ a, button {
         text-align: center;
     }
 }
+
 
 
 
