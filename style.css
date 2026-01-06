@@ -1323,43 +1323,9 @@ img {
     background-position: center;
     background-repeat: no-repeat;
 }
-/* Simple Grid */
-.container {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-}
 
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    margin: -15px;
-}
 
-.col {
-    flex: 1 0 100%;
-    padding: 15px;
-}
 
-/* Mobile mein 1 column, Tablet 2, Desktop 4 */
-@media (min-width: 576px) { .col { flex: 0 0 50%; } }
-@media (min-width: 768px) { .col { flex: 0 0 33.333%; } }
-@media (min-width: 992px) { .col { flex: 0 0 25%; } }
-/* Mobile ke liye buttons bada karo */
-button, .order-btn, .nav-links a {
-    min-height: 44px;
-    min-width: 44px;
-    padding: 12px 24px;
-    font-size: 16px;
-}
-
-/* Touch spacing */
-a, button {
-    margin: 5px;
-    display: inline-block;
-}
 .contact-content h4 {
     font-size: 1.1rem;
     margin-bottom: 0.5rem;
@@ -1805,6 +1771,7 @@ a, button {
         text-align: center;
     }
 }
+
 
 
 
