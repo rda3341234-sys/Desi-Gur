@@ -38,7 +38,7 @@ const PRODUCTS = {
         id: "custom",
         name: "Custom Quantity Desi Mithas Gur",
         price: 0,
-        image: "images/gur-show.jpg",
+        image: "images/gur-hero.jpg",
         description: "We provide gur in any quantity - from 250gm to bulk wholesale orders.",
         weight: "Flexible",
         shelfLife: "6 Months"
@@ -441,6 +441,7 @@ window.addToCart = addToCart;
 window.sendDirectWhatsApp = sendDirectWhatsApp;
 
 window.changeQuantity = changeQuantity;
+
 
 
 
